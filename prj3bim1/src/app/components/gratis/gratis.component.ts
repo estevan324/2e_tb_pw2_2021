@@ -7,39 +7,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GratisComponent implements OnInit {
 
+  indice: number = 0
+
   gratis = [
     {
-      id: 0,
-      capa: 'assets/gratis/gratis1.jpeg',
-      status: 'GRÁTIS',
+      indice: 0,
       nome: 'Genshin Impact',
-      tempo: 'Grátis - 17 de jun. às 12:00'
+      capa: 'assets/gratis/g1.jpg',
+      state : 'Gratis'
     },
     {
-      id: 1,
-      capa: 'assets/gratis/gratis2.jpeg',
-      status: 'GRÁTIS',
+      indice: 1,
       nome: 'Control',
-      tempo: 'Grátis - 17 de jun. às 12:00'
+      capa: 'assets/gratis/g2.jpg',
+      state : 'Gratis'
     },
     {
-      id: 2,
-      capa: 'assets/gratis/gratis3.jpeg',
-      status: 'EM BREVE',
-      nome: 'Hell is the other demons',
-      tempo: 'Grátis - 17 de jun. - 24 de jun.'
+      indice: 2,
+      nome: 'Hell Is other demons',
+      capa: 'assets/gratis/g3.jpg',
+      state : 'Em Breve'
     },
     {
-      id: 3,
-      capa: 'assets/gratis/gratis4.jpeg',
-      status: 'EM BREVE',
+      indice: 3,
       nome: 'Overcooked! 2',
-      tempo: 'Grátis - 17 de jun. - 24 de jun.'
-    },
+      capa: 'assets/gratis/g4.jpg',
+      state : 'Em Breve'
+    }
   ]
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

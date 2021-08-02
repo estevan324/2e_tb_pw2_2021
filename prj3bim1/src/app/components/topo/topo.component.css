@@ -1,30 +1,23 @@
 nav.navbar{
   margin: 0px;
   padding: 0px;
+  height: 15%;
+  font-size: 13px;
 }
 
-.nav-item{
-  font-size: small;
+nav.navbar > div.bg-primary{
+  height: 50px !important;
+  width: 10%;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
 }
 
-small.d-flex{
-  font-size: 10px;
-}
-button > a{
-  text-decoration: none;
+ul.me-auto > .nav-item{
+  padding-inline: 5px;
 }
 
-.pesquisar{
-  background-color: #252525;
-}
-
-::ng-deep .mat-menu-panel {
-  min-width: 64px!important;
-  background-color: #121212;
-}
-
-
-a > button{
+button{
   height: 110%;
   padding: 0px;
   margin: 0px auto;
@@ -32,10 +25,12 @@ a > button{
   position: relative;
 }
 
+.w-40{
+  width: 40%;
+}
 .menu2{
   list-style-type: none;
   margin: 0px;
-  margin-top: 5px;
   padding: 0px;
   display: block;
 }
@@ -45,13 +40,25 @@ a > button{
   margin-right: 10px;
 }
 
-.form-control, #button-addon2{
+.dropdown{
+  display: inline;
+  padding-left: 23%;
+}
+
+.td-none{
+  text-decoration: none;
+  color: white;
+}
+
+.fundo-pesquisa, .form-control{
   background-color: #252525;
-  border: none;
 }
 
-input.form-control:focus{
+.form-control:focus{
   box-shadow: none;
-  color: #fff;
 }
 
+.btn-baixar{
+  font-size: 13px;
+  border-radius: 0 !important;
+}

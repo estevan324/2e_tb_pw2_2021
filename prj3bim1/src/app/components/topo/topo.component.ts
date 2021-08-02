@@ -1,5 +1,4 @@
-import { MatMenuModule } from '@angular/material/menu';
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-topo',
@@ -8,17 +7,19 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 })
 export class TopoComponent implements OnInit {
 
-  ngDoCheck(){
-    let widthButton = document.getElementById('button')?.offsetWidth;
+  navresp: any = ['Descobrir','Navegar']
 
-    let elems = document.getElementsByClassName('mat-menu-panel') as HTMLCollectionOf<HTMLElement>;
-    for(let i = 0; i < elems.length; i++) {
-      elems[i].style.width = widthButton+"px";
-    }
-  }
   constructor() { }
 
   ngOnInit(): void {
+    this.navresp = 'Descobrir'
   }
 
+  getdesc() {
+    this.navresp = 'Descobrir'
+  }
+
+  getnav(){
+    this.navresp = 'Navegar'
+  }
 }

@@ -9,12 +9,6 @@ import { GratisComponent } from './components/gratis/gratis.component';
 import { NovosPopularesComponent } from './components/novos-populares/novos-populares.component';
 import { PromocoesComponent } from './components/promocoes/promocoes.component';
 import { TopoComponent } from './components/topo/topo.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import {MatMenuModule} from '@angular/material/menu';
-import { NovosPopularesSmallComponent } from './components/novos-populares-small/novos-populares-small.component';
-import { FooterSmallComponent } from './components/footer-small/footer-small.component';
-
 
 @NgModule({
   declarations: [
@@ -24,15 +18,11 @@ import { FooterSmallComponent } from './components/footer-small/footer-small.com
     GratisComponent,
     NovosPopularesComponent,
     PromocoesComponent,
-    TopoComponent,
-    NovosPopularesSmallComponent,
-    FooterSmallComponent
+    TopoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatMenuModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

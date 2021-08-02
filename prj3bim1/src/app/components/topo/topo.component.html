@@ -44,7 +44,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a href="#" class="btn btn-primary p-3">
+        <a href="#" class="btn btn-primary btn-lg btn-baixar p-3">
           BAIXAR EPIC GAMES
         </a>
       </li>
@@ -52,59 +52,40 @@
   </div>
 </nav>
 <div class="container pt-4">
+  <div class="dropdown d-lg-none d-md-none">
 
-<!-- Telas Médias e Grandes -->
-<div class="container d-none d-md-block pt-3">
-  <div class="row">
-    <div class="col">
-      <ul class="menu2 float-start">
-        <li>Descobrir</li>
-        <li class="text-white-50">Navegar</li>
-      </ul>
-      <ul class="menu2 float-end">
-        <li class="text-white-50">Lista de Desejos</li>
-      </ul>
-    </div>
-    <div class="col-3">
-      <form>
-          <div class="input-group flex-nowrap">
-            <button class="btn input-group-text pesquisar" id="addon-wrapping" role="button">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#fff" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-              </svg>
-            </button>
-            <input type="text" class="form-control" placeholder="Procurar" aria-label="Username" aria-describedby="addon-wrapping">
-          </div>
-      </form>
-    </div>
-  </div>
-</div>
+    <a class="btn text-white pt-3 w-40" href="#" role="button" id="MenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+      {{ navresp }}
 
-<!-- Telas Pequenas-->
-<div class="container d-block d-md-none">
-  <div class="row">
-    <small class="d-flex justify-content-center text-white-50">
-      LOJA DA EPIC GAMES
-    </small>
-    <div class="col d-flex justify-content-center">
-      <button mat-button [matMenuTriggerFor]="menu" class="btn btn-outline-secondary text-light w-75" id="button">
-        Descobrir
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down ms-1" viewBox="0 0 16 16">
+      <div class="d-inline float-end">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
         </svg>
-      </button>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item class="text-center">
-          <a href="#" class="text-light">Descobrir</a>
-        </button>
-        <button mat-menu-item class="text-center">
-          <a href="#" class="text-light">Navegar</a>
-        </button>
-        <button mat-menu-item class="text-center">
-          <a href="#" class="text-light">Lista de Desejos</a>
-        </button>
-      </mat-menu>
-    </div>
-  </div>
-</div>
+      </div>
+    </a>
 
+    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="MenuLink">
+      <li><a class="dropdown-item" role="button" (click)="getdesc()">Descobrir</a></li>
+      <li><a class="dropdown-item" role="button" (click)="getnav()">Navegar</a></li>
+    </ul>
+  </div>
+
+  <ul class="menu2 float-start mt-4" aria-labelledby="MenuLink">
+    <li><a class="d-none d-md-inline td-none" role="button">Descobrir</a></li>
+    <li><a class="d-none d-md-inline td-none" role="button">Navegar</a></li>
+  </ul>
+
+  <div class="float-end">
+    <form class="form-control border-0 my-2 my-lg-0 fundo-pesquisa">
+      <div class="input-group">
+          <button class="btn text-light my-auto" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+          </button>
+        <input class="form-control border-0 text-light d-none d-md-block" type="search" placeholder="Procurar" aria-label="Search">
+      </div>
+    </form>
+  </div>
+
+</div>

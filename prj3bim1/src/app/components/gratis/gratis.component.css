@@ -1,16 +1,4 @@
-.container-fluid{
-  background-color: #2a2a2a;
-  border-radius: 5px;
-}
-.card{
-  background-color: transparent !important;
-  border: none;
-}
-
-.status{
-  background-color: #007dec;
-}
-
-.card-title, .card-text{
-  font-size: medium;
+.bg-gray{
+  background-color: #222;
+  padding: 15px 15px;
 }

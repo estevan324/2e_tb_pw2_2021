@@ -1,28 +1,14 @@
-.card{
-  background-color: transparent !important;
-  border: none;
-  overflow: hidden;
+.row>.col-2{
+  width: 20%;
 }
 
-.card-img-top{
-  height: 75%;
-  width: 100%;
-  border-radius: 5px !important;
-  display: block;
+.promo{
+  background-color: #3c51e8;
+  padding: 7px 9px;
+  border-radius: 5px;
+  font-size: 70%;
 }
 
-.card-title, .card-text{
-  font-size: medium !important;
-}
-
-.card-text{
-  display: none;
-}
-
-div > span{
-  font-size: small;
-}
-
-.precos{
-  font-size: 15px !important;
+.fs-15px{
+  font-size: 12px;
 }

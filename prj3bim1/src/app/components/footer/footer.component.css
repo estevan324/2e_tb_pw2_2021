@@ -1,41 +1,16 @@
-footer{
-  background-color: #202020;
+.bg-gray{
+  background-color: #222;
+  }
+
+small{
+  font-size: small;
 }
 
-.icon{
-  width: 35px !important;
-  height: 35px !important;
-  display: flex;
-  justify-content: center;
+.pt-4-5{
+  padding-top: 2.2%;
 }
 
-table{
-  color: #fff;
-  font-size: 16px;
-}
-
-td{
-  line-height: 1.2em;
-}
-
-a{
-  text-decoration: none;
-  color: #fff;
-}
-
-.copyright{
-  font-size: 13px;
-  text-align: justify;
-  color: #ccc;
-}
-
-.termos{
-  font-size: 15px;
-  color: #e7e7e7;
-  text-decoration: none;
-}
-
-.logo{
-  width: 29px;
-  height: 29px;
+.px-4-5{
+  padding-left: 2.2%;
+  padding-right: 2.2%;
 }
